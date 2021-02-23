@@ -6,7 +6,7 @@ OBJ = icoheaderreader.o ICOIMDTREADER.o BmpHeaderreader.o BmpDataReader.o writet
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-proj_make: $(OBJ)
+my_project: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 clean:
 	rm -rf *.o proj_make
