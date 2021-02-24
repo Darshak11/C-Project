@@ -10,7 +10,7 @@ int main()
 {
 	char ch;FILE *fo;
 	char filename[30];
-	fo=fopen("b1.tiff","wb");		// Opening tiff file in wb mode
+	fo=fopen("product.tiff","wb");		// Opening tiff file in wb mode
 	FILE *fp;
 	
 	printf("Enter name of ico file with extension: ");
