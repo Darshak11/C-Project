@@ -9,5 +9,5 @@ OBJ = icoheaderreader.o ICOIMDTREADER.o BmpHeaderreader.o BmpDataReader.o writet
 my_project: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 clean:
-	rm -rf *.o proj_make
+	rm -rf *.o my_project
 

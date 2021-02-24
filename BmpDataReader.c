@@ -11,8 +11,6 @@ struct pic bmp32reader(FILE *fp,unsigned int height,unsigned int width)
 	if(img.width==0)
 		img.width=256;
 	img.rgba=(struct RGBA**) malloc(img.height*sizeof(void*));
-	//int bytestoread=((32*img.width+31)/32)*4;
-	//int numofrgb=bytestoread/sizeof(struct RGBA) +1;
 	for(int i=img.height-1;i>=0;i--)
 	{
 		img.rgba[i]=(struct RGBA*)malloc(img.width*sizeof(struct RGBA));
