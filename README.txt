@@ -30,6 +30,7 @@ Source format: ICO. Destination format: TIFF.
 
 > The extra files generated in step-1, is of no further use to the user. This can be removed from project
   directory using the command 'make clean'. This removes the executable 'my_project' and '.o' files.
+  
 -------------------------------------------------------------------------------------------------------------------
 
 ***CONTRIBUTION***
