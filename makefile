@@ -1,4 +1,4 @@
-C=gcc
+CC=gcc
 CFLAGS=-I.
 DEPS = icoheaderreader.h ICOIMDTREADER.h BmpHeaderreader.h BmpDataReader.h writetag.h
 OBJ = icoheaderreader.o ICOIMDTREADER.o BmpHeaderreader.o BmpDataReader.o writetag.o main.o
@@ -9,5 +9,5 @@ OBJ = icoheaderreader.o ICOIMDTREADER.o BmpHeaderreader.o BmpDataReader.o writet
 my_project: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 clean:
-	rm -rf *.o my_project
+	rm *.o my_project
 
